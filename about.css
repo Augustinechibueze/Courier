@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden !important;
+
+}
+.wrapper{
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('images2/ship-2.jpg');
+    background-size: cover;
+    background-position: center;
+    animation-name: chibueze;
+    animation-duration: 14s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes chibueze{
+    0%{
+            background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('images2/ship.jpg');
+      }
+
+       50%{
+            background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('images2/airplane-2.jpg');
+       }
+       100%{
+            background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('images2/water.jpg');
+       }
+}
+.first-head{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding-right: 150px;
+    text-align: right;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.first-head h3, .first-head li{
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.first-head h3 span{
+    color: orange;
+}
+ nav{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav img{
+    width: 100px;
+    height: 50px;
+}
+.nav-links ul li{
+    padding: 20px;
+    display: inline-block;
+    list-style-type: none;
+}
+.nav-links ul li a{
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.container{
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.container .first-child{
+    margin-top: 30px ;
+}
+.container h1 {
+    color: white;
+    font-size:40px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    line-height: 1.2;
+    padding-top: 50px;
+}
+.container p{
+    color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.close-icon{
+    color: whitesmoke;
+    font-size: 50px;
+    padding: 20px;
+    
+}
+.open-icon{
+    color: black;
+    font-size: 50px;
+    padding: 20px;
+}
+@media (min-width:465px){
+    .open-icon,.close-icon{
+        display: none !important;
+    }
+}
+@media (max-width:575px){
+    .nav-links ul li{
+        padding: 10px;
+    }
+
+}
+@media (max-width:465px){
+    .container{
+        min-height: 90vh;
+    }
+    header nav{
+        height: 77px;
+    }
+    nav img{
+        width: 76px;
+    height: 39px;
+    }
+    .nav-links{
+        height: 200%;
+        width: 200px;
+        background-color: orangered;
+        top: 0;
+        right: -200px;
+        position: fixed;
+        color: white;
+        transition: 0.7s;
+        /* z-index: -2; */
+    }
+    .nav-links ul {
+        padding-top: 60px;
+    }
+    .nav-links ul li {
+        display: block;
+        margin-top: 20px;
+    }
+    .nav-links ul li a{
+        font-size: 19px;
+        padding: 35px;
+        color: whitesmoke;
+    }
+            .first-head{
+                padding: 8% 42px;
+            }
+}
+
+
+
+.about-us{
+    padding: 100px 50px;
+    padding-bottom: 30px !important;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.text-about{
+    text-align: left;
+    width: 90%;
+    background: transparent;
+}
+.text-about h3{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.text-about p{
+    color: gray;
+    font-family: sans-serif;
+    margin-top: 20px;
+    line-height: 1.9;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.about-us-wrapper{
+    padding-top: 50px;
+}
+.inside-wrapper{
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    background: transparent;
+}
+.inside-inside{
+    padding-left: 26px;
+    margin-bottom:30px;
+}
+.inside-inside h4{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+.adjust{
+    padding-left: 6px;
+}
+.inside-inside span{
+    color: gray;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.plane-icon{
+    color: rgb(165, 64, 27);
+    font-size: 45px;
+}
+.img-about img{
+   height: 410px;
+   width: 100%;
+}
+
+@media (max-width:900px){
+    .about-us{
+        flex-direction: column;
+        padding: 100px 16px;
+    }
+    .text-about{
+        width: 100%;
+    }
+    .img-about img {
+        height: 410px;
+        width: 100%;
+        margin-top: -94px;
+        padding: 0 50px;
+    }
+}
+@media (max-width:550px){
+    .img-about img{
+        padding:unset;
+    }
+}
+
+.general-info{
+    border-top: 1px solid lightgray;
+    padding: 30px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.info{
+    border: 1px solid lightgray;
+    width: 32%;
+    padding: 50px 20px;
+    text-align: left;
+}
+.info h2{
+    color:black;
+    font-size:18px;
+    font-family: verdana;
+    font-weight: 550;
+}
+.info p{
+    color: gray;
+    font-family: tahoma;
+    line-height: 1.9;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width:968px){
+    .general-info{
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-wrapper{
+    /* height: 400px; */
+    width: 100%;
+    
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url('images2/water.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.footer-wrapper main{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 80px; */
+    padding-left: 40px;
+    align-items: flex-start;
+}
+.footer-text{
+    display: flex;
+    width: 25%;
+    margin-top: 70px;
+}
+.footer-text h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    color: white;
+}
+.footer-text h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    padding-left: 20px;
+}
+.footer-text h3 p{
+    color: lightgoldenrodyellow;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-top: 10px;
+    font-weight: lighter;
+    max-width: 200px;
+}
+.footer-width{
+    background-image: url('images2/step-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 32%;
+    margin-top: 30px;
+}
+.images{
+    display: flex;
+    justify-content: space-between !important;
+    padding-right: 40%;
+}
+footer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+footer p{
+    color:white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    
+}
+@media (max-width:900px){
+    .footer-wrapper main{
+        flex-direction: column;
+    }
+    .footer-text,.footer-width{
+        width:100%;
+    }
+    .footer-width{
+        height: 420px;
+    }
+    .footer-text h3 p{
+        max-width: unset;
+    }
+    footer p{
+        font-size: 13px;
+        padding: 20px;
+    }
+}
+@media (max-width:520px){
+    .footer-width{
+        height: 350px;
+    }
+}
+@media (max-width:440px){
+    .footer-width{
+        height: 250px;
+    }
+}
+.loader {
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    font-size: 50px;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    z-index: 6;
+}
+.loader .fa-solid{
+    font-size: 100px;
+    color: white;
+    animation-name: Joseph;
+    animation-duration:0.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+@keyframes Joseph{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
